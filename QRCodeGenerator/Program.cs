@@ -16,7 +16,7 @@ namespace QRCodeGenerator
     {
       QRCoder.QRCodeGenerator qrGenerator = new QRCoder.QRCodeGenerator();
 
-      QRCodeData qrCodeData = qrGenerator.CreateQrCode("TESTING THIS CODE BLAB BLABE.", QRCoder.QRCodeGenerator.ECCLevel.Q);
+      QRCodeData qrCodeData = qrGenerator.CreateQrCode("Site Code IS BADASS! WEBSITE IS IMCLOUD.COM", QRCoder.QRCodeGenerator.ECCLevel.Q);
       QRCode qrCode = new QRCode(qrCodeData);
       Bitmap qrCodeImage = qrCode.GetGraphic(20);
       var directory = (Path.Combine(Environment.CurrentDirectory, "../", "TempSiteDocuments"));
